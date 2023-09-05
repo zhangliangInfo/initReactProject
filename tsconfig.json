@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "jsx": "react",
+      "module": "CommonJS",
+      "target": "ES5",
+      "lib": ["ESNext", "dom", "dom.iterable"],
+      "strict": true,
+      "strictNullChecks": true,
+      "allowJs": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "Node",
+      "skipLibCheck": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "removeComments": false,
+      "noEmit": false,
+      "sourceMap": true,
+      "outDir": ".",
+  },
+  "exclude": ["node_modules", "dist"],
+  // "files": ["types/index.d.ts"]
+}
