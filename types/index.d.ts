@@ -1,5 +1,7 @@
-declare global {
-  interface Window {
-    ShopPageframe: any
-  }
+interface Window {
+  ShopPageframe: any
 }
+
+declare const __HOSTLOGIN: string
+declare const __HOST: string
+declare module '*.png'

@@ -19,7 +19,16 @@
       "noEmit": false,
       "sourceMap": true,
       "outDir": ".",
+      "baseUrl": ".",
+      "paths": {
+        "@pages/*": ["src/pages/*"],
+        "@component/*": ["src/component/*"],
+        "@utils/*": ["src/utils/*"],
+        "@request/*": ["src/request/*"],
+        "router": ["router.tsx"],
+        "@assets/*": ["src/assets/*"],
+        "@/*": ["./src/*"],
+      }
   },
   "exclude": ["node_modules", "dist"],
-  // "files": ["types/index.d.ts"]
 }

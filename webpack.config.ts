@@ -2,31 +2,41 @@ import { resolve } from 'path'
 import * as webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
-// import HelloWorldPlugin from '../webpackplugin/index'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import TerserPlugin from 'terser-webpack-plugin'
 
 const mode = process.env.mode as 'production' | 'development'
 
 const resolveRoot = (path: any) => resolve(__dirname, path)
 
-const config: webpack.Configuration = {
+const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
   mode,
   entry: {
     main: resolveRoot('main.tsx'),
   },
   output: {
     path: resolveRoot('dist'),
-    filename: '[name].js',
+    filename: 'static/js/[name].js',
     clean: true,
     publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.less'],
     alias: {
+      '@request': resolveRoot('src/request'),
+      '@component': resolveRoot('src/component'),
+      '@pages': resolveRoot('src/pages'),
+      '@utils': resolveRoot('src/utils'),
+      'router': resolveRoot('router.tsx'),
       '@': resolveRoot('src'),
+      "@assets": resolveRoot("src/assets"),
     }
   },
   // cache: false,
-  watch: true,
+  watch: false,
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -45,7 +55,8 @@ const config: webpack.Configuration = {
       {
         test: /\.(le|c)ss$/i,
         use: [
-          'style-loader', 'css-loader', {
+          mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader', {
           loader: 'less-loader',
           options: {
             lessOptions: { javascriptEnabled: true },
@@ -55,11 +66,35 @@ const config: webpack.Configuration = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'static/image/[name].[hash][ext]',
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'static/font/[name].[hash][ext]',
+        }
       },
+    ]
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          type: 'css/mini-extract',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false
+      })
     ]
   },
   plugins: [
@@ -70,7 +105,12 @@ const config: webpack.Configuration = {
       hash: true,
       inject: true
     }),
-    // new HelloWorldPlugin()
+    new MiniCssExtractPlugin({
+      filename: 'static/css/[name].css'
+    }),
+    new webpack.DefinePlugin({
+      __HOSTLOGIN: `'//passport.jd.com/uc/login?ReturnUrl='`,
+    })
   ].concat(mode === 'development' ? [new ReactRefreshWebpackPlugin() as HtmlWebpackPlugin] : []),
 }
 
