@@ -1256,6 +1256,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@remix-run/router@1.9.0":
+  version "1.9.0"
+  resolved "http://registry.m.jd.com/@remix-run/router/download/@remix-run/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
+  integrity sha1-kDMji0HEy+HpYezLP3nixYgyjPY=
+
 "@rollup/pluginutils@^4.2.0":
   version "4.2.1"
   resolved "http://registry.m.jd.com/@rollup/pluginutils/download/@rollup/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
@@ -3919,6 +3924,25 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.6"
 
+mobx-react-lite@^4.0.4:
+  version "4.0.4"
+  resolved "http://registry.m.jd.com/mobx-react-lite/download/mobx-react-lite-4.0.4.tgz#eee3c55dfa6841365d5a7764971c456db12570fb"
+  integrity sha1-7uPFXfpoQTZdWndklxxFbbElcPs=
+  dependencies:
+    use-sync-external-store "^1.2.0"
+
+mobx-value@^1.7.0:
+  version "1.7.0"
+  resolved "http://registry.m.jd.com/mobx-value/download/mobx-value-1.7.0.tgz#da5b34b9449e4bd4e93cbfa07ce8c76a3a0c0f14"
+  integrity sha1-2ls0uUSeS9TpPL+gfOjHajoMDxQ=
+  dependencies:
+    mobx "^6.6.2"
+
+mobx@^6.10.2, mobx@^6.6.2:
+  version "6.10.2"
+  resolved "http://registry.m.jd.com/mobx/download/mobx-6.10.2.tgz#96e123deef140750360ca9a5b02a8b91fbffd4d9"
+  integrity sha1-luEj3u8UB1A2DKmlsCqLkfv/1Nk=
+
 ms@2.0.0:
   version "2.0.0"
   resolved "http://registry.m.jd.com/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4348,6 +4372,21 @@ react-refresh@^0.14.0:
   version "0.14.0"
   resolved "http://registry.m.jd.com/react-refresh/download/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha1-TgKCU3il8icHlVTUKEiJNU5fVT4=
+
+react-router-dom@^6.16.0:
+  version "6.16.0"
+  resolved "http://registry.m.jd.com/react-router-dom/download/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
+  integrity sha1-hvJGWNo162ZyfnXsuxoCnjPuOdk=
+  dependencies:
+    "@remix-run/router" "1.9.0"
+    react-router "6.16.0"
+
+react-router@6.16.0:
+  version "6.16.0"
+  resolved "http://registry.m.jd.com/react-router/download/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
+  integrity sha1-q789W9ycEIybgioYvhDuAECW+4E=
+  dependencies:
+    "@remix-run/router" "1.9.0"
 
 react@^18.2.0:
   version "18.2.0"
@@ -5025,6 +5064,11 @@ uri-js@^4.2.2:
   integrity sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.m.jd.com/use-sync-external-store/download/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha1-fb79bvP+TnZ6DPXXKHqs+1hGkoo=
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
