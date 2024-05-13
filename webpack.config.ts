@@ -25,9 +25,9 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
     alias: {
       '@request': resolveRoot('src/request'),
       '@component': resolveRoot('src/component'),
-      '@pages': resolveRoot('src/pages'),
+      '@page': resolveRoot('src/page'),
       '@utils': resolveRoot('src/utils'),
-      'router': resolveRoot('router.tsx'),
+      'router': resolveRoot('src/router.tsx'),
       '@': resolveRoot('src'),
       "@assets": resolveRoot("src/assets"),
     }
@@ -111,7 +111,7 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
     new webpack.DefinePlugin({
       __HOSTLOGIN: `'//passport.jd.com/uc/login?ReturnUrl='`,
     })
-  ].concat(mode === 'development' ? [new ReactRefreshWebpackPlugin() as HtmlWebpackPlugin] : []),
+  ].concat(mode === 'development' ? [new ReactRefreshWebpackPlugin() as unknown as HtmlWebpackPlugin] : []),
 }
 
 export default config

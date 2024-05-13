@@ -17,9 +17,9 @@ export default defineConfig(({ command }) => {
         alias: {
           '@request': resolveRoot('src/request'),
           '@component': resolveRoot('src/component'),
-          '@pages': resolveRoot('src/pages'),
+          '@page': resolveRoot('src/page'),
           '@utils': resolveRoot('src/utils'),
-          'router': resolveRoot('router.tsx'),
+          'router': resolveRoot('src/router.tsx'),
           "@assets": resolveRoot("src/assets"),
           '@': resolveRoot('src'),
         }

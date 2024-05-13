@@ -21,11 +21,11 @@
       "outDir": ".",
       "baseUrl": ".",
       "paths": {
-        "@pages/*": ["src/pages/*"],
+        "@page/*": ["src/page/*"],
         "@component/*": ["src/component/*"],
         "@utils/*": ["src/utils/*"],
         "@request/*": ["src/request/*"],
-        "router": ["router.tsx"],
+        "router": ["src/router.tsx"],
         "@assets/*": ["src/assets/*"],
         "@/*": ["./src/*"],
       }
