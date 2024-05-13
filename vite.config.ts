@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import config from './config'
 import { resolve } from 'path'
+import { viteExternalsPlugin } from 'vite-plugin-externals'
 
 const resolveRoot = (path: string) => resolve(__dirname, path)
 const mode = process.env.mode as 'production' | 'development'
@@ -45,6 +46,10 @@ export default defineConfig(({ command }) => {
         }
       },
       plugins: [
+        viteExternalsPlugin({
+          // react: 'React',
+          // 'react-dom': 'ReactDOM',
+        }),
         react({
           babel: {
             plugins: [

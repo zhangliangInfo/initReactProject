@@ -37,6 +37,10 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
   devServer: {
     historyApiFallback: true,
   },
+  externals: {
+    // react: 'React',
+    // 'react-dom': 'ReactDOM',
+  },
   module: {
     rules: [
       {
