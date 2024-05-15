@@ -60,7 +60,14 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
         test: /\.(le|c)ss$/i,
         use: [
           mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader', {
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[name]__[local]__[hash:base64:5]'
+              }
+            }
+          }, {
           loader: 'less-loader',
           options: {
             lessOptions: { javascriptEnabled: true },

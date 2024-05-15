@@ -43,6 +43,10 @@ export default defineConfig(({ command }) => {
       css: {
         postcss: {
           plugins: [require('autoprefixer')]
+        },
+        modules: {  // css modules
+          generateScopedName: '[name]__[local]___[hash:base64:5]',
+          hashPrefix: 'prefix'
         }
       },
       plugins: [
