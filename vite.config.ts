@@ -21,7 +21,7 @@ export default defineConfig(({ command }) => {
           '@page': resolveRoot('src/page'),
           '@utils': resolveRoot('src/utils'),
           'router': resolveRoot('src/router.tsx'),
-          "@assets": resolveRoot("src/assets"),
+          '@assets': resolveRoot('src/assets'),
           '@': resolveRoot('src'),
         }
       },
@@ -90,7 +90,7 @@ export default defineConfig(({ command }) => {
         }
       ],
       define: {
-        __HOSTLOGIN: `'//passport.jd.com/uc/login?ReturnUrl='`,
+        __HOSTLOGIN: '\'//passport.jd.com/uc/login?ReturnUrl=\'',
       }
     }
   } else {
