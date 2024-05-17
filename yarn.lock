@@ -1236,14 +1236,14 @@
   resolved "http://registry.m.jd.com/@esbuild/win32-x64/download/@esbuild/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha1-eGxfQfBDsHr7GvN2g9fDNmiFj20=
 
-"@eslint-community/eslint-utils@^4.2.0":
+"@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
   resolved "http://registry.m.jd.com/@eslint-community/eslint-utils/download/@eslint-community/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"
   integrity sha1-ojUU6Pua8SadX3eIqlVnmNYca1k=
   dependencies:
     eslint-visitor-keys "^3.3.0"
 
-"@eslint-community/regexpp@^4.4.0":
+"@eslint-community/regexpp@^4.4.0", "@eslint-community/regexpp@^4.5.1":
   version "4.10.0"
   resolved "http://registry.m.jd.com/@eslint-community/regexpp/download/@eslint-community/regexpp-4.10.0.tgz#548f6de556857c8bb73bbee70c35dc82a2e74d63"
   integrity sha1-VI9t5VaFfIu3O77nDDXcgqLnTWM=
@@ -1575,6 +1575,11 @@
   resolved "http://registry.m.jd.com/@types/json-schema/download/@types/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha1-1w+rpwOdX8pUyDx9urQQUdK29ss=
 
+"@types/json-schema@^7.0.12":
+  version "7.0.15"
+  resolved "http://registry.m.jd.com/@types/json-schema/download/@types/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
+  integrity sha1-WWoXRyM2lNUPatinhp/Lb1bPWEE=
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "http://registry.m.jd.com/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
@@ -1641,6 +1646,11 @@
   resolved "http://registry.m.jd.com/@types/scheduler/download/@types/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha1-zvCePsmvHWPSpsxbODpzfiTm3PU=
 
+"@types/semver@^7.5.0":
+  version "7.5.8"
+  resolved "http://registry.m.jd.com/@types/semver/download/@types/semver-7.5.8.tgz#8268a8c57a3e4abd25c165ecd36237db7948a55e"
+  integrity sha1-gmioxXo+Sr0lwWXs02I323lIpV4=
+
 "@types/send@*":
   version "0.17.1"
   resolved "http://registry.m.jd.com/@types/send/download/@types/send-0.17.1.tgz#ed4932b8a2a805f1fe362a70f4e62d0ac994e301"
@@ -1694,6 +1704,92 @@
   integrity sha1-r1h5ZKoGaCcC7m3Lx75BqA5LKOs=
   dependencies:
     "@types/node" "*"
+
+"@typescript-eslint/eslint-plugin@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-6.20.0.tgz#9cf31546d2d5e884602626d89b0e0d2168ac25ed"
+  integrity sha1-nPMVRtLV6IRgJibYmw4NIWisJe0=
+  dependencies:
+    "@eslint-community/regexpp" "^4.5.1"
+    "@typescript-eslint/scope-manager" "6.20.0"
+    "@typescript-eslint/type-utils" "6.20.0"
+    "@typescript-eslint/utils" "6.20.0"
+    "@typescript-eslint/visitor-keys" "6.20.0"
+    debug "^4.3.4"
+    graphemer "^1.4.0"
+    ignore "^5.2.4"
+    natural-compare "^1.4.0"
+    semver "^7.5.4"
+    ts-api-utils "^1.0.1"
+
+"@typescript-eslint/parser@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/parser/download/@typescript-eslint/parser-6.20.0.tgz#17e314177304bdf498527e3c4b112e41287b7416"
+  integrity sha1-F+MUF3MEvfSYUn48SxEuQSh7dBY=
+  dependencies:
+    "@typescript-eslint/scope-manager" "6.20.0"
+    "@typescript-eslint/types" "6.20.0"
+    "@typescript-eslint/typescript-estree" "6.20.0"
+    "@typescript-eslint/visitor-keys" "6.20.0"
+    debug "^4.3.4"
+
+"@typescript-eslint/scope-manager@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/scope-manager/download/@typescript-eslint/scope-manager-6.20.0.tgz#8a926e60f6c47feb5bab878246dc2ae465730151"
+  integrity sha1-ipJuYPbEf+tbq4eCRtwq5GVzAVE=
+  dependencies:
+    "@typescript-eslint/types" "6.20.0"
+    "@typescript-eslint/visitor-keys" "6.20.0"
+
+"@typescript-eslint/type-utils@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/type-utils/download/@typescript-eslint/type-utils-6.20.0.tgz#d395475cd0f3610dd80c7d8716fa0db767da3831"
+  integrity sha1-05VHXNDzYQ3YDH2HFvoNt2faODE=
+  dependencies:
+    "@typescript-eslint/typescript-estree" "6.20.0"
+    "@typescript-eslint/utils" "6.20.0"
+    debug "^4.3.4"
+    ts-api-utils "^1.0.1"
+
+"@typescript-eslint/types@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/types/download/@typescript-eslint/types-6.20.0.tgz#5ccd74c29011ae7714ae6973e4ec0c634708b448"
+  integrity sha1-XM10wpARrncUrmlz5OwMY0cItEg=
+
+"@typescript-eslint/typescript-estree@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-6.20.0.tgz#5b2d0975949e6bdd8d45ee1471461ef5fadc5542"
+  integrity sha1-Wy0JdZSea92NRe4UcUYe9frcVUI=
+  dependencies:
+    "@typescript-eslint/types" "6.20.0"
+    "@typescript-eslint/visitor-keys" "6.20.0"
+    debug "^4.3.4"
+    globby "^11.1.0"
+    is-glob "^4.0.3"
+    minimatch "9.0.3"
+    semver "^7.5.4"
+    ts-api-utils "^1.0.1"
+
+"@typescript-eslint/utils@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/utils/download/@typescript-eslint/utils-6.20.0.tgz#0e52afcfaa51af5656490ba4b7437cc3aa28633d"
+  integrity sha1-DlKvz6pRr1ZWSQukt0N8w6ooYz0=
+  dependencies:
+    "@eslint-community/eslint-utils" "^4.4.0"
+    "@types/json-schema" "^7.0.12"
+    "@types/semver" "^7.5.0"
+    "@typescript-eslint/scope-manager" "6.20.0"
+    "@typescript-eslint/types" "6.20.0"
+    "@typescript-eslint/typescript-estree" "6.20.0"
+    semver "^7.5.4"
+
+"@typescript-eslint/visitor-keys@6.20.0":
+  version "6.20.0"
+  resolved "http://registry.m.jd.com/@typescript-eslint/visitor-keys/download/@typescript-eslint/visitor-keys-6.20.0.tgz#f7ada27f2803de89df0edd9fd7be22c05ce6a498"
+  integrity sha1-962ifygD3onfDt2f174iwFzmpJg=
+  dependencies:
+    "@typescript-eslint/types" "6.20.0"
+    eslint-visitor-keys "^3.4.1"
 
 "@vitejs/plugin-react@^4.0.4":
   version "4.0.4"
@@ -2029,13 +2125,6 @@ argparse@^2.0.1:
   resolved "http://registry.m.jd.com/argparse/download/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
 
-aria-query@^5.3.0:
-  version "5.3.0"
-  resolved "http://registry.m.jd.com/aria-query/download/aria-query-5.3.0.tgz#650c569e41ad90b51b3d7df5e5eed1c7549c103e"
-  integrity sha1-ZQxWnkGtkLUbPX315e7Rx1ScED4=
-  dependencies:
-    dequal "^2.0.3"
-
 array-buffer-byte-length@^1.0.1:
   version "1.0.1"
   resolved "http://registry.m.jd.com/array-buffer-byte-length/download/array-buffer-byte-length-1.0.1.tgz#1e5583ec16763540a27ae52eed99ff899223568f"
@@ -2070,6 +2159,11 @@ array-tree-filter@^2.1.0:
   version "2.1.0"
   resolved "http://registry.m.jd.com/array-tree-filter/download/array-tree-filter-2.1.0.tgz#873ac00fec83749f255ac8dd083814b4f6329190"
   integrity sha1-hzrAD+yDdJ8lWsjdCDgUtPYykZA=
+
+array-union@^2.1.0:
+  version "2.1.0"
+  resolved "http://registry.m.jd.com/array-union/download/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
+  integrity sha1-t5hCCtvrHego2ErNii4j0+/oXo0=
 
 array.prototype.findlast@^1.2.4:
   version "1.2.5"
@@ -2150,11 +2244,6 @@ arraybuffer.prototype.slice@^1.0.3:
     is-array-buffer "^3.0.4"
     is-shared-array-buffer "^1.0.2"
 
-ast-types-flow@^0.0.8:
-  version "0.0.8"
-  resolved "http://registry.m.jd.com/ast-types-flow/download/ast-types-flow-0.0.8.tgz#0a85e1c92695769ac13a428bb653e7538bea27d6"
-  integrity sha1-CoXhySaVdprBOkKLtlPnU4vqJ9Y=
-
 async@^3.2.3:
   version "3.2.4"
   resolved "http://registry.m.jd.com/async/download/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
@@ -2184,11 +2273,6 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-axe-core@=4.7.0:
-  version "4.7.0"
-  resolved "http://registry.m.jd.com/axe-core/download/axe-core-4.7.0.tgz#34ba5a48a8b564f67e103f0aa5768d76e15bbbbf"
-  integrity sha1-NLpaSKi1ZPZ+ED8KpXaNduFbu78=
-
 axios@^1.6.8:
   version "1.6.8"
   resolved "http://registry.m.jd.com/axios/download/axios-1.6.8.tgz#66d294951f5d988a00e87a0ffb955316a619ea66"
@@ -2197,13 +2281,6 @@ axios@^1.6.8:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
-
-axobject-query@^3.2.1:
-  version "3.2.1"
-  resolved "http://registry.m.jd.com/axobject-query/download/axobject-query-3.2.1.tgz#39c378a6e3b06ca679f29138151e45b2b32da62a"
-  integrity sha1-OcN4puOwbKZ58pE4FR5FsrMtpio=
-  dependencies:
-    dequal "^2.0.3"
 
 babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -3195,11 +3272,6 @@ csstype@^3.1.3:
   resolved "http://registry.m.jd.com/csstype/download/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha1-2A/ylNEU+w5qxQD7+FtgE31+/4E=
 
-damerau-levenshtein@^1.0.8:
-  version "1.0.8"
-  resolved "http://registry.m.jd.com/damerau-levenshtein/download/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
-  integrity sha1-tD0obMvTa8Wy9+1ByvLQq6H4puc=
-
 data-view-buffer@^1.0.1:
   version "1.0.1"
   resolved "http://registry.m.jd.com/data-view-buffer/download/data-view-buffer-1.0.1.tgz#8ea6326efec17a2e42620696e671d7d5a8bc66b2"
@@ -3246,7 +3318,7 @@ debug@^3.2.6, debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.4"
   resolved "http://registry.m.jd.com/debug/download/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha1-Exn2V5NX8jONMzfSzdSRS7XcyGU=
@@ -3303,11 +3375,6 @@ depd@~1.1.2:
   resolved "http://registry.m.jd.com/depd/download/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
-dequal@^2.0.3:
-  version "2.0.3"
-  resolved "http://registry.m.jd.com/dequal/download/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
-  integrity sha1-JkQhTxmX057Q7g7OcjNUkKesZ74=
-
 destroy@1.2.0:
   version "1.2.0"
   resolved "http://registry.m.jd.com/destroy/download/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
@@ -3329,6 +3396,13 @@ diff@^4.0.1:
   version "4.0.2"
   resolved "http://registry.m.jd.com/diff/download/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
+
+dir-glob@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.m.jd.com/dir-glob/download/dir-glob-3.0.1.tgz#56dbf73d992a4a93ba1584f4534063fd2e41717f"
+  integrity sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=
+  dependencies:
+    path-type "^4.0.0"
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -3427,11 +3501,6 @@ electron-to-chromium@^1.3.47, electron-to-chromium@^1.4.477:
   version "1.4.496"
   resolved "http://registry.m.jd.com/electron-to-chromium/download/electron-to-chromium-1.4.496.tgz#a57534b70d2bdee7e1ad7dbd4c91e560cbd08db1"
   integrity sha1-pXU0tw0r3ufhrX29TJHlYMvQjbE=
-
-emoji-regex@^9.2.2:
-  version "9.2.2"
-  resolved "http://registry.m.jd.com/emoji-regex/download/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
-  integrity sha1-hAyIA7DYBH9P8M+WMXazLU7z7XI=
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -3539,7 +3608,7 @@ es-errors@^1.1.0, es-errors@^1.2.1, es-errors@^1.3.0:
   resolved "http://registry.m.jd.com/es-errors/download/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
   integrity sha1-BfdaJdq5jk+x3NXhRywFRtUFfI8=
 
-es-iterator-helpers@^1.0.15, es-iterator-helpers@^1.0.17:
+es-iterator-helpers@^1.0.17:
   version "1.0.19"
   resolved "http://registry.m.jd.com/es-iterator-helpers/download/es-iterator-helpers-1.0.19.tgz#117003d0e5fec237b4b5c08aded722e0c6d50ca8"
   integrity sha1-EXAD0OX+wje0tcCK3tci4MbVDKg=
@@ -3687,28 +3756,6 @@ eslint-plugin-import@^2.29.1:
     object.values "^1.1.7"
     semver "^6.3.1"
     tsconfig-paths "^3.15.0"
-
-eslint-plugin-jsx-a11y@^6.8.0:
-  version "6.8.0"
-  resolved "http://registry.m.jd.com/eslint-plugin-jsx-a11y/download/eslint-plugin-jsx-a11y-6.8.0.tgz#2fa9c701d44fcd722b7c771ec322432857fcbad2"
-  integrity sha1-L6nHAdRPzXIrfHcewyJDKFf8utI=
-  dependencies:
-    "@babel/runtime" "^7.23.2"
-    aria-query "^5.3.0"
-    array-includes "^3.1.7"
-    array.prototype.flatmap "^1.3.2"
-    ast-types-flow "^0.0.8"
-    axe-core "=4.7.0"
-    axobject-query "^3.2.1"
-    damerau-levenshtein "^1.0.8"
-    emoji-regex "^9.2.2"
-    es-iterator-helpers "^1.0.15"
-    hasown "^2.0.0"
-    jsx-ast-utils "^3.3.5"
-    language-tags "^1.0.9"
-    minimatch "^3.1.2"
-    object.entries "^1.1.7"
-    object.fromentries "^2.0.7"
 
 eslint-plugin-react@^7.34.1:
   version "7.34.1"
@@ -3933,6 +3980,17 @@ fast-glob@^3.2.11:
   version "3.3.1"
   resolved "http://registry.m.jd.com/fast-glob/download/fast-glob-3.3.1.tgz#784b4e897340f3dbbef17413b3f11acf03c874c4"
   integrity sha1-eEtOiXNA89u+8XQTs/EazwPIdMQ=
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
+
+fast-glob@^3.2.9:
+  version "3.3.2"
+  resolved "http://registry.m.jd.com/fast-glob/download/fast-glob-3.3.2.tgz#a904501e57cfdd2ffcded45e99a54fef55e46129"
+  integrity sha1-qQRQHlfP3S/83tRemaVP71XkYSk=
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -4235,6 +4293,18 @@ globalthis@^1.0.3:
     define-properties "^1.2.1"
     gopd "^1.0.1"
 
+globby@^11.1.0:
+  version "11.1.0"
+  resolved "http://registry.m.jd.com/globby/download/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
+  integrity sha1-vUvpi7BC+D15b344EZkfvoKg00s=
+  dependencies:
+    array-union "^2.1.0"
+    dir-glob "^3.0.1"
+    fast-glob "^3.2.9"
+    ignore "^5.2.0"
+    merge2 "^1.4.1"
+    slash "^3.0.0"
+
 gopd@^1.0.1:
   version "1.0.1"
   resolved "http://registry.m.jd.com/gopd/download/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
@@ -4251,6 +4321,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "http://registry.m.jd.com/grapheme-splitter/download/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha1-nPOmZcYkdHmJaDSvNc8du0QAdn4=
+
+graphemer@^1.4.0:
+  version "1.4.0"
+  resolved "http://registry.m.jd.com/graphemer/download/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
+  integrity sha1-+y8dVeDjoYSa7/yQxPoN1ToOZsY=
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -4459,7 +4534,7 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   resolved "http://registry.m.jd.com/icss-utils/download/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha1-xr5oWKvQE9do6YNmrkfiXViHsa4=
 
-ignore@^5.2.0:
+ignore@^5.2.0, ignore@^5.2.4:
   version "5.3.1"
   resolved "http://registry.m.jd.com/ignore/download/ignore-5.3.1.tgz#5073e554cd42c5b33b394375f538b8593e34d4ef"
   integrity sha1-UHPlVM1CxbM7OUN19Ti4WT401O8=
@@ -4907,7 +4982,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-"jsx-ast-utils@^2.4.1 || ^3.0.0", jsx-ast-utils@^3.3.5:
+"jsx-ast-utils@^2.4.1 || ^3.0.0":
   version "3.3.5"
   resolved "http://registry.m.jd.com/jsx-ast-utils/download/jsx-ast-utils-3.3.5.tgz#4766bd05a8e2a11af222becd19e15575e52a853a"
   integrity sha1-R2a9BajioRryIr7NGeFVdeUqhTo=
@@ -4928,18 +5003,6 @@ kind-of@^6.0.2:
   version "6.0.3"
   resolved "http://registry.m.jd.com/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
-
-language-subtag-registry@^0.3.20:
-  version "0.3.22"
-  resolved "http://registry.m.jd.com/language-subtag-registry/download/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"
-  integrity sha1-LhUAhhsuRX66fnroaHfL0I+h/R0=
-
-language-tags@^1.0.9:
-  version "1.0.9"
-  resolved "http://registry.m.jd.com/language-tags/download/language-tags-1.0.9.tgz#1ffdcd0ec0fafb4b1be7f8b11f306ad0f9c08777"
-  integrity sha1-H/3NDsD6+0sb5/ixHzBq0PnAh3c=
-  dependencies:
-    language-subtag-registry "^0.3.20"
 
 launch-editor@^2.6.0:
   version "2.6.0"
@@ -5108,7 +5171,7 @@ merge-stream@^2.0.0:
   resolved "http://registry.m.jd.com/merge-stream/download/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha1-UoI2KaFN0AyXcPtq1H3GMQ8sH2A=
 
-merge2@^1.3.0:
+merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "http://registry.m.jd.com/merge2/download/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
@@ -5159,6 +5222,13 @@ minimalistic-assert@^1.0.0:
   version "1.0.1"
   resolved "http://registry.m.jd.com/minimalistic-assert/download/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha1-LhlN4ERibUoQ5/f7wAznPoPk1cc=
+
+minimatch@9.0.3:
+  version "9.0.3"
+  resolved "http://registry.m.jd.com/minimatch/download/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
+  integrity sha1-puAMPeRMOlQr+q5wq/wiQgptqCU=
+  dependencies:
+    brace-expansion "^2.0.1"
 
 minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
@@ -5562,6 +5632,11 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "http://registry.m.jd.com/path-to-regexp/download/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+path-type@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.m.jd.com/path-type/download/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
+  integrity sha1-hO0BwKe6OAr+CdkKjBgNzZ0DBDs=
 
 pathe@^0.2.0:
   version "0.2.0"
@@ -6493,6 +6568,11 @@ semver@^7.3.8:
   dependencies:
     lru-cache "^6.0.0"
 
+semver@^7.5.4:
+  version "7.6.2"
+  resolved "http://registry.m.jd.com/semver/download/semver-7.6.2.tgz#1e3b34759f896e8f14d6134732ce798aeb0c6e13"
+  integrity sha1-Hjs0dZ+Jbo8U1hNHMs55iusMbhM=
+
 send@0.18.0:
   version "0.18.0"
   resolved "http://registry.m.jd.com/send/download/send-0.18.0.tgz#670167cc654b05f5aa4a767f9113bb371bc706be"
@@ -6626,6 +6706,11 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "http://registry.m.jd.com/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
   integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
+
+slash@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.m.jd.com/slash/download/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
+  integrity sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=
 
 sockjs@^0.3.24:
   version "0.3.24"
@@ -6921,6 +7006,11 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "http://registry.m.jd.com/trim-right/download/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
+
+ts-api-utils@^1.0.1:
+  version "1.3.0"
+  resolved "http://registry.m.jd.com/ts-api-utils/download/ts-api-utils-1.3.0.tgz#4b490e27129f1e8e686b45cc4ab63714dc60eea1"
+  integrity sha1-S0kOJxKfHo5oa0XMSrY3FNxg7qE=
 
 ts-node@^10.9.1:
   version "10.9.1"
